@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sns{
+    width: 80%;
+    max-width: 1600px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.sns-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    gap: 20px;
+}
+
+.sns-youtube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 8px;
+}
+
+.sns-youtube span{
+    color: red;
+    font-size: 40px;
+}
+
+/* right */
+.sns-right{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.sns-social-media{
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sns-social-media a img{
+    width: 50px;
+    height: 50px;
+}
