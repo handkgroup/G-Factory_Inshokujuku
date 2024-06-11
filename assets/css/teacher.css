@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+.teacher{
+    width: 80%;
+    max-width: 1600px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.teacher-card{
+    display: flex;
+    /* width: 1620px;
+    max-width: 100%; */
+    width: 100%;
+    padding: 20px;
+
+}
+
+.teacher-card img{
+    width: 30%;
+    flex-shrink: 0;
+    align-self: stretch;
+    object-fit: cover;
+}
+
+.teacher-card-data{
+    /* width: 800px; */
+    width: 70%;
+    height: 100%;
+    
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: #FAFAFA;
+}
+
+.teacher-card-data ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.teacher-card-data ul li{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.teacher-course{
+    color: white;
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border: 1px solid var(--black, #000);
+    background: var(--black, #09122B);
+    width: 250px;
+    max-width: 80%;
+}
+
+.teacher-name{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (max-width: 1500px){
+    .teacher{
+        width: 80%;
+        max-width: 1600px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
