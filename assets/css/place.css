@@ -1,0 +1,30 @@
+.place{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1040px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.place img{
+    width: 100%;
+}
+
+.place-content{
+    width: 60%;
+}
+
+.place-info-title{
+    display: flex;
+    flex-direction: row;
+
+}
+.place-info-title img{ 
+    margin-left: 20px;
+    width: 50%;
+    height: 10%;
+}
