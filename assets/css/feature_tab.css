@@ -1,0 +1,178 @@
+/* Base Styles */
+.feature-tabs {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1040px;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+}
+
+.label {
+  display: flex;
+  padding: 20px 6rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  border-radius: 100px;
+  background: var(--grey, #908F8F);
+  text-align: center; /* Center the text inside the label */
+  margin: 10px; /* Add some margin for spacing */
+}
+
+
+.label:hover {
+  background: #d8d8d8;
+}
+
+.label:active {
+  background: #ccc;
+}
+
+.input:focus + .label {
+  z-index: 1;
+}
+
+.input:checked + .label {
+  background: red;
+  color: white;
+}
+
+/* h1-line start */
+.h1-line-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.h1-line-grid h1 {
+  color: red;
+  font-size: 2.4rem;
+}
+
+.h1-line-large {
+  height: 0.1rem;
+  width: 100%;
+  background: red;
+}
+
+.h1-line-small {
+  height: 3rem;
+  width: 0.3rem;
+  background: red;
+}
+
+/* h1-line end*/
+
+/* tabs-card start */
+.tabs-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  gap: 1.8rem;
+  flex: 1 0 0;
+}
+
+.tabs-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.tabs-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tabs-card-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+/* tabs-card end */
+
+.tabs-quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.h1-line-extra {
+  width: 24px;
+  height: 4px;
+  background: red;
+}
+
+.panel {
+  display: none;
+  background: #fff;
+  order: 99;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .tabs-card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+
+  .label {
+    flex: 1 0 100%;
+    width: auto;
+    padding: 20px 2rem;
+    font-size: 16px;
+  }
+
+  .tabs {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .label {
+    flex: 1 0 100%;
+    width: auto;
+    padding: 15px 1rem;
+    font-size: 14px;
+  }
+
+  .tabs-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tabs-card-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .h1-line-grid h1 {
+    font-size: 2rem;
+  }
+}
+
+.input:checked + .label + .panel {
+  display: grid;
+  gap: 24px;
+}
